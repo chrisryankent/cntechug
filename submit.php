@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'path/to/PHPMailer/src/Exception.php';
-require 'path/to/PHPMailer/src/PHPMailer.php';
-require 'path/to/PHPMailer/src/SMTP.php';
+require 'vendor/phpmailer/src/Exception.php';
+require 'vendor/phpmailer/src/PHPMailer.php';
+require 'vendor/phpmailer/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
@@ -21,8 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.example.com'; // Set the SMTP server to send through
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'your_email@example.com'; // SMTP username
-        $mail->Password   = 'your_password'; // SMTP password
+        $mail->Username   = 'chrisryankent@gmail.com'; // SMTP username
+        $mail->Password   = 'prototype'; // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
