@@ -74,21 +74,8 @@ footer{
     -webkit-transform: translateY(0%);
   }
 }
-@media screen and (max-width: 768px) {
-  .col-sm-4 {
-    text-align: center;
-    margin: 25px 0;
-  }
-  .btn-lg {
-      width: 100%;
-      margin-bottom: 35px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .logo {
-      font-size: 150px;
-  }
-}
+@
+
 @-webkit-keyframes load8 {
     0% {
         -webkit-transform: rotate(0deg);
@@ -183,9 +170,7 @@ footer{
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
+
 .thumbnail img:hover{
   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   transition: 1s ease;
@@ -201,11 +186,7 @@ footer{
   user-select: none;
 }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
+
 .page:hover{
   box-shadow: 0 ,2 ,0.5 , hsla(0, 10%, 20%, 0.5);
   cursor: pointer;
