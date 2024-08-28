@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webcam Capture</title>
+</head>
+<body>
+    <video id="webcam" autoplay></video>
+    <button onclick="captureImage()">Capture</button>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const video = document.getElementById('webcam');
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then((stream) => {
+                video.srcObject = stream;
+            })
+            .catch((error) => {
+                console.error('Error accessing webcam:', error);
+            });
+
+        function captureImage() {
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            const imageData = canvas.toDataURL('image/jpeg');
+            // Send imageData to the server (e.g., via AJAX) for further processing.
+        }
+    </script>
+</body>
+</html>

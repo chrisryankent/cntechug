@@ -1,0 +1,36 @@
+.col-md-4 a{
+    font-size: 20px;
+}
+.col-md-4 address{
+    font-size: 20px;
+  }
+.col-md-4 a:hover{
+    transition: 2px;
+    color: blue;
+}
+.content{
+    color:khaki;
+}
+footer .list li{
+    list-style: none;
+}
+footer{
+    background-color: darkslategray;
+}
+.size i{
+    font-size: 50px;
+    justify-content: space-around;
+    margin: 50px;
+}
+.size i:hover{
+    transition: .5s ease;
+    transform: scale(1.1);
+    color:lightgreen;
+}
+
+.edit a:hover{
+    transition: 1s ease;
+    transform: scale(1.1);
+    color: cornsilk;
+    cursor: pointer;
+}

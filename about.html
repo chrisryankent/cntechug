@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/about.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+   <-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+</head>
+<body class="bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <a class="navbar-brand text-primary " href="#">CN-TECH</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav  icon-bar ">
+        <li class="nav-item">
+          <a class="nav-link text-primary active" href="index.html" title="Home"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="contact us.html" title="contact us"><i class="fa fa-address-card-o"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="about.html" title="about us"><i class="fa fa-id-badge"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="blog.html" title="blog"><i class="fa fa-file"></i></a>
+        </li>
+      </ul>
+        
+    </div>
+    <ul class="nav justify-content-end icon-bar">
+      <li class="nav-item ">
+        <a class="nav-link text-primary" href="https://www.youtube.com/@chrisryankent"><i class="fa fa-youtube"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="https://www.facebook.com/groups/1460603691237891"><i class="fa fa-facebook"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="https://x.com/ryankent6675364?mx=2"><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="https://t.me/quatin"><i class="fa fa-telegram"></i></a>
+      </li>
+    </ul> 
+  </nav>
+        <h1 class="text-center text-primary"> </h1>
+    <div class="container-fluid color rounded"><br>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-danger">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">About</li>
+        </ol>
+      </nav>
+        
+        <img src="images/nathan.jpg " class="rounded-circle mx-auto d-block mt-5" alt="tuzinde ian" width="340" height="236">
+        <p class="text-center text-success"><strong>CN-TECH ACCADEMY UGANDA</strong> was found in 2023 may by a visionary legend called MUWANGUZI jonathan. <br> 
+            He developed the idea After C programming Exam which gave him a view that Metropolitan international University had great computer scientists.
+        <br> He later implemented the idea to the class with whome they agreed that it was a very good idea basically done in most programming camps and schools. </p>
+    <div class="container color">
+        <h1 class="display-6 text-info text-center">our main programmers are</h1>
+        <div class="row">
+            <div class="col-6">
+        <ul class="list-group shadow p-5">
+            <li class="list-group-item list-group-item-success"><h6>WEB DEVELOPERS AND IT SOLUTIONS DEPARTMENT</h6></li>
+            <li class="list-group-item list-group-item-danger">muwanguzi jonathan</li>
+            <li class="list-group-item list-group-item-info">Chris Ryan Kent</li>
+            <li class="list-group-item list-group-item-warning">Nganzi victor</li>
+
+          </ul>
+        </div>
+        <div class="col-6">
+            <ul class="list-group shadow p-5">
+                <li class="list-group-item list-group-item-success"><h6>GRAPHICS AND EDITING DEPARTMENT</h6></li>
+                <li class="list-group-item list-group-item-warning">Kamyuka Ibrahim</li>
+                <li class="list-group-item list-group-item-danger">ndalla allan</li>
+                <li class="list-group-item list-group-item-warning">Okoth Bruno</li>
+
+              </ul>
+            </div>
+        </div>
+    </div>
+    <div class="rounded p-5 bg-dark-subtle">
+       <div class="row text-center">
+        <div class="col-sm-4">
+            <a href="pulpitrock.jpg" class="img-thumbnail text-decoration-none text-dark">
+               
+            <img src="images/chris.jpg" alt="dansan" class=" rounded shadow-lg img-thumbnail img-fluid">
+            <p class="caption">CHRIS<br> our leading programmer and web designer</p>
+        </a>
+        </div>
+        <div class="col-sm-4">
+            <a href="pulpitrock.jpg" class="img-thumbnail text-decoration-none text-dark">
+            <img src="images/nathan.jpg" alt="jonathan"class="rounded shadow-lg img-thumbnail img-fluid">
+            <p class="caption">jonathan <br>our project cordinator</p>
+            </a>
+        </div>
+        <div class="col-sm-4 ">
+            <a href="pulpitrock.jpg" class="text-decoration-none img-thumbnail text-dark">
+            <img src="images/BRUN.jpg"  alt="Bruno" class="shadow-lg rounded img-thumbnail img-fluid">
+            <p class="caption">okoth bruno <br>our ideologist</p>
+            </a>
+        </div>
+       </div>
+       <div class="map">
+        <p id="demo"></p>
+       </div>
+
+    </div>
+</div>
+<script>
+  var x = document.getElementById("demo");
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+  
+  function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+
+  </script>
+</body>
+<footer class="container-fluid bg-dark text-white p-5">
+  <div class="row m-10 text-center">
+      <div class="col-md-4 edit">
+          <h2>quick links</h2>
+          <p><a href="index.html" class="page-link text-warning btn-link active">home</a></p>
+          <p><a href="about.html" class="page-link text-warning">about</a></p>
+          <p><a href="contact us.html" class="page-link text-warning">contact us</a></p>
+          
+           
+
+      </div>
+      <div class="col-md-4 text-warning">
+          <h2 class="text-white">Address</h2>
+          <address>
+             MIU Students <br>
+              located in kampala <br>
+              p.o.box 2231<br>
+              namugoona<br>
+              luyinja <br>
+              nansana<br>
+              kasubi <br>
+              nakulabye<br>
+
+          </address>
+
+      </div>
+      <div class="col-md-4 edit">
+        <!---  <h2 class="text-white">services</h6>
+          <ul class="list text-info">
+              <li >Website Development</li>
+              <li>Video Editing</li>
+              <li>Mobile application Development </li>
+              <li>database systems management and design</li>
+              <li>systems design</li>    
+              <li >Graphics Design</li>
+            </ul>
+            <ul class="list text-info">
+              <li >Website Development</li>
+              <li>Video Editing</li>
+              <li>Mobile application Development </li>
+              <li>database systems management and design</li>
+              <li>systems design</li>    
+              <li >Graphics Design</li>
+            </ul> -->
+            <h2 class="text-white">Reviews</h2>
+            <ul class="list-unstyled">
+              <li class="my-2">
+                <a class=" d-inline-flex text-decoration-none text-warning align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">Services &#xf107;</a>
+                <ul class="list-unstyled ps-3 collapse" id="components-collapse">
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#accordion">Website Development</a></li>
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#alerts">Mobile application Development</a></li>
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#badge">Project assesments</a></li>
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#breadcrumb">Mobile application development</a></li>
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#buttons">Graphics Design</a></li>
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#button-group">Course works</a></li>
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#card">Photoshop and Film Making</a></li>
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#carousel">Quickbooks</a></li>
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#dropdowns">C and C++ programming</a></li>
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#list-group">Game development</a></li>
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#modal">Cyber security</a></li>
+                </ul>
+              </li>
+              <li class="my-2">
+                <a class="d-inline-flex text-decoration-none text-warning  text-info align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Media Handles &#xf107;</a>
+                <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="https://www.facebook.com/groups/1460603691237891">Facebook</a></li>
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="https://www.youtube.com/@chrisryankent">youtube</a></li>
+                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="https://x.com/ryankent6675364?mx=2"">twitter</a></li>
+
+                </ul>
+              </li> 
+         
+          </ul>
+          </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar"
+    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+      100% Perfect in What We do
+    </div>
+  </div>
+  <p class="text-center">&copy;2024 all rights reserved</p>
+</footer>
+</html>

@@ -1,0 +1,29 @@
+div:hover{
+    transition: ease 3s;
+
+}
+footer .list li{
+    list-style: none;
+}
+footer{
+    background-color: darkslategray;
+}
+
+div:hover{
+box-shadow: 0,0.4,4,rgba(0, 10,0, 0.5);
+}
+.color{
+background-color: hsla(0, 10%, 90%, 30%);
+}
+.edit a:hover{
+    transition: 1s ease;
+    transform: scale(1.1);
+    color: cornsilk;
+    cursor: pointer;
+}
+.col-md-4 a{
+    font-size: 20px;
+}
+.col-md-4 address{
+    font-size: 20px;
+  }
