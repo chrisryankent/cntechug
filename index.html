@@ -3,140 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="_bSxP9ktV3JU5OfKq2raxLIpj46aaJ0yd7Nihs3Xr08" />
+    <meta name="google-site-verification" content="_bSxP9ktV3JU5OfKq2raxLIpj46aaJ0yd7Nihs3Xr08" />
     <title>Home</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="styles/index.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <body>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .bg-image {
+            background-size: cover;
+            background-position: center;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+        }
+        .navbar {
+            flex-wrap: wrap;
+        }
+        .icon-bar {
+            width: 100%;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-      <ul class="nav  icon-bar justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link text-primary active" href="index.html" title="Home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary" href="contact us.html" title="contact us">Contact us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary" href="about.html" title="about us">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary" href="blog.html" title="blog">Blog</a>
-        </li>
-      </ul>
-      <a href="donate.html" class="btn btn-sm btn-outline-primary">Donate</a>
-      </nav>
+        <ul class="nav icon-bar">
+            <li class="nav-item">
+                <a class="nav-link text-primary active" href="index.html" title="Home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="contact us.html" title="Contact Us">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="about.html" title="About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="blog.html" title="Blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="donate.html" class="btn btn-sm btn-outline-primary">Donate</a>
+            </li>
+        </ul>
+    </nav>
 
-        <div class="bg-image mt-5" style="background-image: url('back.webp'); height: 100%;">
-            <div class="container mt-5 p-5">
-                <h1 class="text-center text-primary" id="myPage">CN-TECH ACCADEMY UGANDA</h1>
-                    <div class="container text-info">
-                        <p>The tech accademy uganda was formed 0n 29th of september 2023!. It was formed with the aim of solving all computer related problems.
-                          we deal in all diferent types of software update and upgrade, graphics designing, website dvelopment, application development, computer care and maintenance, system analysis, database management among others.
-                        </p>
-                        <p><i>OUR VISION </i>is to offer a wide range of solutions to the worlds problem  using technology <span id="dots">...</span> <span id="more">and <i>OUR MISSION </i>Is that to reduce on the bridging gap between computer illitrate and literate allover the world, by teaching  and equiping both IT native and IT immigrants with skill 
-                      s of ICT</span></p>
-                        <button class="btn btn-primary" onclick="myFunction()" id="myBtn">read more</button>
-                    </div>
-                
-</div>
-            <div class="container">
-                <h6 class="display-6 text-info text-center">Services Offered</h6>
-                <div class="row slideanim">
-                    <div class="col-md-6 girl col-sm-6 ">
-                        <div class="bg-success text-dark mt-5 p-5 mb-5 girl">
-                        <h6>web designing</h6>
-                  <p>we design and develop websites in a specified time possible and also teach sudents how to design their own websites from first principles using languages such as HTML, CSS, JAVA, PHP,and many more languages.on top of these we teach them digital marketing skills. </p>
-                    </div>
-                </div>
-                    <div class="col-md-6 girl col-sm-6 ">
-                        <div class="bg-info text-dark mt-5 p-5 mb-5 girl">
-                        <h6>mobile application development</h6>
-                        <p>we develope applications for both andriod,windows,mac,linux among others. we also teach students createbthis application using languages such as Kotlin, C#, JAVASCRIPT, python among others .</p>
-                    </div>
-                </div>
-                    <div class="col-md-6 girl col-sm-6 ">
-                        <div class="bg-info text-dark mt-5 p-5 mb-5 girl">
-                        <h6>database management</h6>
-                        <p>We monitor and develop database systems for schools, hospitals companies among others!</p>
-                    </div>
-                </div>
-                    <div class="col-md-6 girl col-sm-6 ">
-                        <div class="bg-success text-dark mt-5 p-5 mb-5 girl">
-                        <h6>systems design</h6>
-                        <p>we design database systems for schools, hospitals companies among others. </p>
-                    </div>
-                </div>
+    <div class="bg-image mt-5" style="background-image: url('back.webp'); height: 100%;">
+        <div class="container mt-5 p-5">
+            <h1 class="text-center text-primary" id="myPage">CN-TECH ACADEMY UGANDA</h1>
+            <div class="container text-info">
+                <p>The tech academy Uganda was formed on 29th of September 2023. It was formed with the aim of solving all computer-related problems. We deal in all different types of software updates and upgrades, graphics designing, website development, application development, computer care and maintenance, system analysis, database management among others.</p>
+                <p><i>OUR VISION</i> is to offer a wide range of solutions to the world's problems using technology <span id="dots">...</span> <span id="more">and <i>OUR MISSION</i> is to reduce the bridging gap between computer illiterate and literate all over the world, by teaching and equipping both IT native and IT immigrants with skills of ICT.</span></p>
+                <button class="btn btn-primary" onclick="myFunction()" id="myBtn">read more</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h6 class="display-6 text-info text-center">Services Offered</h6>
+        <div class="row slideanim">
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="bg-success text-dark p-4">
+                    <h6>Web Designing</h6>
+                    <p>We design and develop websites in a specified time possible and also teach students how to design their own websites from first principles using languages such as HTML, CSS, JAVA, PHP, and many more. On top of these, we teach them digital marketing skills.</p>
                 </div>
             </div>
-            <div id="portfolio" class="container-fluid text-center bg-dark-subtle">
-                <h6 class="text-info display-6">What we have created</h4>
-                <div class="row text-center slideanim">
-                  <div class="col-sm-4 ">
-                    <div class="thumbnail">
-                      <img src="images/web-design-header.jpg" alt="Paris" width="400" height="300">
-                      <p><strong>Fine templates</strong></p>
-                      <p>Yes, we have built web templates for our customers</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumbnail">
-                      <img src="images/apps.jpg" alt="New York" width="400" height="300">
-                      <p><strong>Mobile And Computer Programs </strong></p>
-                      <p>Our Team can build all Your desirable software in less time time you expect</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumbnail">
-                      <img src="images/webdesign.png" alt="San Francisco" width="400" height="300">
-                      <p><strong>Modern Web Designs</strong></p>
-                      <p>Yes, Most of the modern designs you see online are developed by us with coperation with AI</p>
-                    </div>
-                  </div>
-                  <div class="row text-center  slideanim">
-                    <div class="col-sm-4">
-                      <div class="thumbnail">
-                        <img src="what-is-web-system-development.webp" alt="Paris" width="400" height="300">
-                        <p><strong>Teach You Coding</strong></p>
-                        <p>We can help you with learning how to code, even completing your home work</p>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="thumbnail">
-                        <img src="images/system.jpg" alt="New York" width="400" height="300">
-                        <p><strong>Teach You Coding</strong></p>
-                        <p>We can help you with learning how to code, even completing your home work</p>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="thumbnail">
-                        <img src="images/coding.jpg" alt="San Francisco" width="400" height="300">
-                        <p><strong>uganda on top</strong></p>
-                        <p>Yes, uganda is where we base from.</p>
-                      </div>
-                    </div>
-                </div><br>
-                <div class="container-fluid bg-grey">
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-                    </div>
-                    <div class="col-sm-4">
-                      <h6 class="display-6 text-info">Our Values</h2><br>
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="bg-info text-dark p-4">
+                    <h6>Mobile Application Development</h6>
+                    <p>We develop applications for Android, Windows, Mac, Linux, among others. We also teach students to create these applications using languages such as Kotlin, C#, JavaScript, Python, among others.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="bg-info text-dark p-4">
+                    <h6>Database Management</h6>
+                    <p>We monitor and develop database systems for schools, hospitals, companies, among others.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="bg-success text-dark p-4">
+                    <h6>Systems Design</h6>
+                    <p>We design database systems for schools, hospitals, companies, among others.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                      <p><strong>MISSION:</strong> Is that to reduce on the bridging gap between computer illitrate and literate allover the world, by teaching  and equiping both IT native and IT immigrants with skill 
-                        s of ICT</p><br>
-                      <p><strong>VISION:</strong> is to offer a wide range of solutions to the worlds problem  using technology</p>
-                    </div>
-                  </div>
-                </div><br>
-                <h6 class="text-info display-6">What our customers say</h6>
-                  <div class="slideshow-container">
-                    <div class="mySlides text-success fade">
+    <div id="portfolio" class="container-fluid text-center bg-dark-subtle">
+        <h6 class="text-info display-6">What we have created</h6>
+        <div class="row text-center slideanim">
+            <div class="col-sm-4 mb-4">
+                <div class="thumbnail">
+                    <img src="images/web-design-header.jpg" alt="Web Design">
+                    <p><strong>Fine templates</strong></p>
+                    <p>Yes, we have built web templates for our customers</p>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <div class="thumbnail">
+                    <img src="images/apps.jpg" alt="Mobile Apps">
+                    <p><strong>Mobile and Computer Programs</strong></p>
+                    <p>Our team can build all your desirable software in less time than you expect</p>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <div class="thumbnail">
+                    <img src="images/webdesign.png" alt="Modern Web Designs">
+                    <p><strong>Modern Web Designs</strong></p>
+                    <p>Most of the modern designs you see online are developed by us in cooperation with AI</p>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <div class="thumbnail">
+                    <img src="what-is-web-system-development.webp" alt="Web System Development">
+                    <p><strong>Teach You Coding</strong></p>
+                    <p>We can help you with learning how to code, even completing your homework</p>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <div class="thumbnail">
+                    <img src="images/system.jpg" alt="System Development">
+                    <p><strong>Teach You Coding</strong></p>
+                    <p>We can help you with learning how to code, even completing your homework</p>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <div class="thumbnail">
+                    <img src="images/coding.jpg" alt="Coding">
+                    <p><strong>Uganda on Top</strong></p>
+                    <p>Yes, Uganda is where we are based.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-globe logo slideanim"></span>
+            </div>
+            <div class="col-sm-8">
+                <h6 class="display-6 text-info">Our Values</h6>
+                <p><strong>MISSION:</strong> To reduce the bridging gap between computer illiterate and literate all over the world by teaching and equipping both IT native and IT immigrants with skills of ICT.</p>
+                <p><strong>VISION:</strong> To offer a wide range of solutions to the world's problems using technology.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-grey">
+        <h6 class="text-info display-6 text-center">What Our Customers Say</h6>
+        <div class="slideshow-container">
+            <div class="mySlides text-success fade">
                       <img src="images/this.jpg" class="rounded-circle d-block mx-auto" alt="" width="100" height="60">
                       "This groop is the best. I am so happy with the result!"<br><span style="font-style:normal;">Asiimwe Isaac, Quality assurance director MIU, Comment Box</span>
                      
