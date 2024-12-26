@@ -6,7 +6,6 @@
     <meta name="google-site-verification" content="_bSxP9ktV3JU5OfKq2raxLIpj46aaJ0yd7Nihs3Xr08" />
     <title>Home</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/index.js"></script>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,6 +15,13 @@
             background-color: #f8f9fa;
             color: #343a40;
         }
+        .navbar {
+            z-index: 1030;
+            position: relative;
+        }
+        .navbar-toggler {
+            z-index: 1050;
+        }
         .bg-image {
             background-size: cover;
             background-position: center;
@@ -24,45 +30,34 @@
             width: 100%;
             height: auto;
         }
-        .navbar {
-            flex-wrap: wrap;
-          z-index: 1030; 
-        }
-       .navbar-toggler { z-index: 1050; }
-        .icon-bar {
-            width: 100%;
-            justify-content: flex-end;
-        }
-       
     </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-      <a class="navbar-brand text-primary" href="index.html">CN-TECH</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link text-primary active" href="index.html" title="Home">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-primary" href="contact us.html" title="Contact Us">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-primary" href="about.html" title="About">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-primary" href="blog.html" title="Blog">Blog</a>
-              </li>
-              <li class="nav-item">
-                  <a href="donate.html" class="btn btn-sm btn-outline-primary">Donate</a>
-              </li>
-          </ul>
-      </div>
-  </nav>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <a class="navbar-brand text-primary" href="index.html">CN-TECH</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-primary active" href="index.html" title="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="contact us.html" title="Contact Us">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="about.html" title="About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="blog.html" title="Blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="donate.html" class="btn btn-sm btn-outline-primary">Donate</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="bg-image mt-5" style="background-image: url('back.webp'); height: 100%;">
         <div class="container mt-5 p-5">
@@ -169,167 +164,57 @@
     <div class="container-fluid bg-grey">
         <h6 class="text-info display-6 text-center">What Our Customers Say</h6>
         <div class="slideshow-container">
-            <div class="mySlides text-success fade">
-                      <img src="images/this.jpg" class="rounded-circle d-block mx-auto" alt="" width="100" height="60">
-                      "This groop is the best. I am so happy with the result!"<br><span style="font-style:normal;">Asiimwe Isaac, Quality assurance director MIU, Comment Box</span>
-                     
+              <div class="mySlides text-success fade">
+                <img src="images/this.jpg" class="rounded-circle d-block mx-auto" alt="" width="100" height="60">
+                "This group is the best. I am so happy with the result!"<br><span style="font-style:normal;">Asiimwe Isaac, Quality assurance director MIU, Comment Box</span>
+              </div>
+              <div class="mySlides text-success fade">
+                <img src="images/muh.jpg" class="rounded-circle d-block mx-auto" alt="" width="100" height="60">
+                "Could I... BE any more happy with this Group?"<br><span style="font-style:normal;">Jackie Chan, Actor, FriendsAlot</span>
+              </div>
+              <div class="mySlides text-success fade">
+                <img src="images/grad.jpg" class="rounded-circle d-block mx-auto" alt="" width="100" height="60">
+                "One word... WOW!!"<br><span style="font-style:normal;">Mercy Catherine, Salesman, Rep Inc</span>
+              </div>
+              </div>
+              </div>
+
+              <div class="album py-5 bg-light">
+              <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow page">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/download.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
+                        <div class="card-body">
+                            <p class="card-text">Pop-ups are great for displaying additional information.</p>
+                        </div>
                     </div>
-                    <div class="mySlides text-success fade">
-                      <img src="images/muh.jpg" class="rounded-circle d-block mx-auto" alt="" width="100" height="60"> 
-                      "Could I... BE any more happy with this Group?"<br><span style="font-style:normal;">Jackie Chan, Actor, FriendsAlot</span>
+                </div>
+                <div class="col">
+                    <div class="card shadow page">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/download.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
+                        <div class="card-body">
+                            <p class="card-text">More content can go here.</p>
+                        </div>
                     </div>
-                    <div class="mySlides text-success fade">
-                      <img src="images/grad.jpg" class="rounded-circle d-block mx-auto" alt="" width="100" height="60">
-                      "One word... WOW!!"<br><span style="font-style:normal;">Mercy Catherine, Salesman, Rep Inc</span>
-                    </div>
-                    </div>
-                    <br>
-                    <div style="text-align:center">
-                      <span class="dot"></span> 
-                      <span class="dot"></span> 
-                      <span class="dot"></span> 
-                    </div>
-</div><br><br>
+                </div>
+              </div>
+              </div>
+              </div>
 
-<div class="album py-5 bg-light">
-  <div class="container">
+              <footer>
+              <p>Thank you for visiting our site. Follow us on social media for more updates.</p>
+              </footer>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-     
+              <script src="js/jquery-3.7.1.min.js"></script> 
+              <script src="js/bootstrap.min.js"></script> 
+              <script src="js/index.js"></script>
+              <script src="js/index2.js"></script>  
+              <script src="js/carousel.js"></script> 
+              <script src="js/slide.js"></script>  
+              </body>
+              </html>
 
-      <div class="col">
-        <div class="card shadow page">
-          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/mobileass.jpeg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
-
-          <div class="card-body">
-            <p class="card-text">User Experience (UX): Designing intuitive and engaging interfaces that provide a seamless experience for users.
-              Cross-Platform Development: Building apps that work on multiple operating systems, such as iOS and Android, often using frameworks like React Native or Flutter.
-              Performance Optimization</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow page">
-          <video src="How to Create Automatic Popup Window _ Automatic Popup Window HTML.mp4" width="100%" height="225" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" controls></video>
-
-          <div class="card-body">
-            <p class="card-text">Trigger: A button that, when clicked, opens the pop-up.
-              Pop-up Content: Could be a form, a message, or any other content you want to display.
-              Close Mechanism: An ‘X’ button or clicking outside the pop-up to close it.
-              Pop-ups are great for displaying additional information</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow page">
-          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/download.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
-
-          <div class="card-body">
-            <p class="card-text">Web development is a dynamic and creative field that involves:
-
-              Designing: Crafting visually appealing and user-friendly interfaces.
-              Coding: Writing and debugging code to build functional websites and applications.
-              Problem-solving: Tackling challenges and finding efficient solutions.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-</div>
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script> 
-  <script src="js/index.js"></script> 
-  <script src="js/index2.js"></script> 
-  <script src="js/carousel.js"></script>
-  <script src="js/slide.js"></script>
-    </body>
-<footer class="container-fluid bg-dark text-white p-5">
-    <div class="row m-10 text-center">
-        <div class="col-md-4 edit">
-            <h2>quick links</h2>
-            <p><a href="index.html" class="page-link text-warning btn-link active">home</a></p>
-            <p><a href="about.html" class="page-link text-warning">about</a></p>
-            <p><a href="contact us.html" class="page-link text-warning">contact us</a></p>
-            <p><a href="#myPage" class="text-decoration-none" title="To Top">
-                <span class="glyphicon glyphicon-chevron-up text-warning">Scroll To Top</span>
-              </a></p>
-             
-
-        </div>
-        <div class="col-md-4 text-warning">
-            <h2 class="text-white">Address</h2>
-            <address>
-               MIU Students <br>
-                located in kampala <br>
-                p.o.box 2231<br>
-                namugoona<br>
-                luyinja <br>
-                nansana<br>
-                kasubi <br>
-                nakulabye<br>
-
-            </address>
-
-        </div>
-        <div class="col-md-4 edit">
-          <!---  <h2 class="text-white">services</h6>
-            <ul class="list text-info">
-                <li >Website Development</li>
-                <li>Video Editing</li>
-                <li>Mobile application Development </li>
-                <li>database systems management and design</li>
-                <li>systems design</li>    
-                <li >Graphics Design</li>
-              </ul>
-              <ul class="list text-info">
-                <li >Website Development</li>
-                <li>Video Editing</li>
-                <li>Mobile application Development </li>
-                <li>database systems management and design</li>
-                <li>systems design</li>    
-                <li >Graphics Design</li>
-              </ul> -->
-              <h2 class="text-white">Reviews</h2>
-              <ul class="list-unstyled">
-                <li class="my-2">
-                  <a class=" d-inline-flex text-decoration-none text-warning align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">Services &#xf107;</a>
-                  <ul class="list-unstyled ps-3 collapse" id="components-collapse">
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#accordion">Website Development</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#alerts">Mobile application Development</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#badge">Project assesments</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#breadcrumb">Mobile application development</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#buttons">Graphics Design</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#button-group">Course works</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#card">Photoshop and Film Making</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#carousel">Quickbooks</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#dropdowns">C and C++ programming</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#list-group">Game development</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#modal">Cyber security</a></li>
-                  </ul>
-                </li>
-              <li class="my-2">
-                <a class="d-inline-flex text-decoration-none text-warning  text-info align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Media Handles &#xf107;</a>
-                <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
-                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="https://www.facebook.com/groups/1460603691237891">Facebook</a></li>
-                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="https://www.youtube.com/@chrisryankent">youtube</a></li>
-                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="https://x.com/ryankent6675364?mx=2"">twitter</a></li>
-
-                </ul>
-              </li> 
-           
-            </ul>
-            </div>
-    </div>
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped active" role="progressbar"
-      aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-        100% Perfect in What We do
-      </div>
-    </div>
-    <p class="text-center">&copy;2024 all rights reserved</p>
-</footer>
-  
-</html>
+               
