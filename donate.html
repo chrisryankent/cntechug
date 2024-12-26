@@ -71,11 +71,7 @@
             .payment-details {
                 display: none;
             }
-            footer {
-                text-align: center;
-                margin-top: 2rem;
-                color: #6c757d;
-            }
+           
         </style>
     </head>
     <body>
@@ -106,7 +102,7 @@
               </div>
           </nav>
 
-        <header>
+        <header class="mt-5">
             <h1>Complete Your Donation</h1>
         </header>
 
@@ -193,9 +189,89 @@
             </form>
         </div>
         <footer>
-            <p>
-                Thank you for your generosity! All donations are tax-deductible.
-            </p>
+            <footer class="container-fluid bg-dark text-white p-5">
+              <div class="row m-10 text-center">
+                  <div class="col-md-4 edit">
+                      <h2>quick links</h2>
+                      <p><a href="index.html" class="page-link text-warning btn-link active">home</a></p>
+                      <p><a href="about.html" class="page-link text-warning">about</a></p>
+                      <p><a href="contact us.html" class="page-link text-warning">contact us</a></p>
+
+
+
+                  </div>
+                  <div class="col-md-4 text-warning">
+                      <h2 class="text-white">Address</h2>
+                      <address>
+                         MIU Students <br>
+                          located in kampala <br>
+                          p.o.box 2231<br>
+                          namugoona<br>
+                          luyinja <br>
+                          nansana<br>
+                          kasubi <br>
+                          nakulabye<br>
+
+                      </address>
+
+                  </div>
+                  <div class="col-md-4 edit">
+                    <!---  <h2 class="text-white">services</h6>
+                      <ul class="list text-info">
+                          <li >Website Development</li>
+                          <li>Video Editing</li>
+                          <li>Mobile application Development </li>
+                          <li>database systems management and design</li>
+                          <li>systems design</li>    
+                          <li >Graphics Design</li>
+                        </ul>
+                        <ul class="list text-info">
+                          <li >Website Development</li>
+                          <li>Video Editing</li>
+                          <li>Mobile application Development </li>
+                          <li>database systems management and design</li>
+                          <li>systems design</li>    
+                          <li >Graphics Design</li>
+                        </ul> -->
+                        <h2 class="text-white">Reviews</h2>
+                        <ul class="list-unstyled">
+                          <li class="my-2">
+                            <a class=" d-inline-flex text-decoration-none text-warning align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">Services &#xf107;</a>
+                            <ul class="list-unstyled ps-3 collapse" id="components-collapse">
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#accordion">Website Development</a></li>
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#alerts">Mobile application Development</a></li>
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#badge">Project assesments</a></li>
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#breadcrumb">Mobile application development</a></li>
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#buttons">Graphics Design</a></li>
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#button-group">Course works</a></li>
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#card">Photoshop and Film Making</a></li>
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#carousel">Quickbooks</a></li>
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#dropdowns">C and C++ programming</a></li>
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#list-group">Game development</a></li>
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#modal">Cyber security</a></li>
+                            </ul>
+                          </li>
+                          <li class="my-2">
+                            <a class="d-inline-flex text-decoration-none text-warning  text-info align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Media Handles &#xf107;</a>
+                            <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="https://www.facebook.com/groups/1460603691237891">Facebook</a></li>
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="https://www.youtube.com/@chrisryankent">youtube</a></li>
+                              <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="https://x.com/ryankent6675364?mx=2"">twitter</a></li>
+
+                            </ul>
+                          </li> 
+
+                      </ul>
+                      </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                  100% Perfect in What We do
+                </div>
+              </div>
+              <p class="text-center">&copy;2024 all rights reserved</p>
+            </footer>
         </footer>
         <script src="https://js.stripe.com/v3/"></script>
         <script>
