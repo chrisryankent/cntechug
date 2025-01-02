@@ -275,6 +275,8 @@
         </footer>
         <script src="https://js.stripe.com/v3/"></script>
         <script>
+           
+
             function generateUUID() {
                 return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
                     var r = (Math.random() * 16) | 0,
@@ -351,7 +353,7 @@
                     });
                 });
                 var selectedMethod = this.value;
-                           if (selectedMethod) {
+                if (selectedMethod) {
                     document.getElementById(selectedMethod + '-details').style.display = 'block';
                     document.querySelectorAll('#' + selectedMethod + '-details input').forEach(function(input) {
                         input.required = true;
@@ -410,6 +412,7 @@
                     });
                 }
             });
+
         </script>
          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
