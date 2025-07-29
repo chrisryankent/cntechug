@@ -4,337 +4,440 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="_bSxP9ktV3JU5OfKq2raxLIpj46aaJ0yd7Nihs3Xr08" />
-    <title>Home</title>
+    <title>CN-TECH Academy Uganda</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/index.js"></script>
-    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            color: #343a40;
-        }
-        .bg-image {
-            background-size: cover;
-            background-position: center;
-        }
-        .thumbnail img {
-            width: 100%;
-            height: auto;
-        }
-        .navbar {
-            flex-wrap: wrap;
-          z-index: 1030; 
-        }
-       .navbar-toggler { z-index: 1050; }
-        .icon-bar {
-            width: 100%;
-            justify-content: flex-end;
-        }
-       
-    </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-      <a class="navbar-brand text-primary" href="index.html">CN-TECH</a>
-      <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar modern-navbar" id="mainNavbar">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <span class="navbar-logo mr-2"><i class="fa fa-graduation-cap"></i></span>
+        <span>CN-TECH</span>
+      </a>
+      <button class="navbar-toggler bg-primary" type="button" id="customNavToggle" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link text-primary active" href="index.html" title="Home">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-primary" href="contact us.html" title="Contact Us">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-primary" href="about.html" title="About">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-primary" href="blog.html" title="Blog">Blog</a>
-              </li>
-              <li class="nav-item">
-                  <a href="donate.html" class="btn btn-sm btn-outline-primary">Donate</a>
-              </li>
+      <div class="navbar-menu" id="customNavbarMenu">
+          <ul class="navbar-nav ml-auto align-items-lg-center">
+              <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact us.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a href="donate.html" class="btn btn-sm btn-outline-primary ml-lg-3">Donate</a></li>
+              <li class="nav-item"><button class="dark-toggle ml-lg-2" id="darkToggle" title="Toggle dark mode"><i class="fa fa-moon-o"></i></button></li>
           </ul>
       </div>
   </nav>
-
-
-    <div class="bg-image mt-5" style="background-image: url('back.webp'); height: 100%;">
-        <div class="container mt-5 p-5">
-            <h1 class="text-center text-primary" id="myPage">CN-TECH ACADEMY UGANDA</h1>
-            <div class="container text-info">
-                <p>The tech academy Uganda was formed on 29th of September 2023. It was formed with the aim of solving all computer-related problems. We deal in all different types of software updates and upgrades, graphics designing, website development, application development, computer care and maintenance, system analysis, database management among others.</p>
-                <p><i>OUR VISION</i> is to offer a wide range of solutions to the world's problems using technology <span id="dots">...</span> <span id="more">and <i>OUR MISSION</i> is to reduce the bridging gap between computer illiterate and literate all over the world, by teaching and equipping both IT native and IT immigrants with skills of ICT.</span></p>
-                <button class="btn btn-primary" onclick="myFunction()" id="myBtn">read more</button>
-            </div>
-        </div>
-    </div>
-    <script async="async" data-cfasync="false" src="//roughlydispleasureslayer.com/40d56698680b24a1804c29e22766bb7a/invoke.js"></script>
-    <div id="container-40d56698680b24a1804c29e22766bb7a"></div>
-    <div class="container">
-        <h6 class="display-6 text-info text-center">Services Offered</h6>
-        <div class="row slideanim">
-            <div class="col-md-6 col-sm-12 mb-4">
-                <div class="bg-success text-dark p-4">
-                    <h6>Web Designing</h6>
-                    <p>We design and develop websites in a specified time possible and also teach students how to design their own websites from first principles using languages such as HTML, CSS, JAVA, PHP, and many more. On top of these, we teach them digital marketing skills.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 mb-4">
-                <div class="bg-info text-dark p-4">
-                    <h6>Mobile Application Development</h6>
-                    <p>We develop applications for Android, Windows, Mac, Linux, among others. We also teach students to create these applications using languages such as Kotlin, C#, JavaScript, Python, among others.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 mb-4">
-                <div class="bg-info text-dark p-4">
-                    <h6>Database Management</h6>
-                    <p>We monitor and develop database systems for schools, hospitals, companies, among others.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 mb-4">
-                <div class="bg-success text-dark p-4">
-                    <h6>Systems Design</h6>
-                    <p>We design database systems for schools, hospitals, companies, among others.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="portfolio" class="container-fluid text-center bg-dark-subtle">
-        <h6 class="text-info display-6">What we have created</h6>
-        <div class="row text-center slideanim">
-            <div class="col-sm-4 mb-4">
-                <div class="thumbnail">
-                    <img src="images/web-design-header.jpg" alt="Web Design">
-                    <p><strong>Fine templates</strong></p>
-                    <p>Yes, we have built web templates for our customers</p>
-                </div>
-            </div>
-            <div class="col-sm-4 mb-4">
-                <div class="thumbnail">
-                    <img src="images/apps.jpg" alt="Mobile Apps">
-                    <p><strong>Mobile and Computer Programs</strong></p>
-                    <p>Our team can build all your desirable software in less time than you expect</p>
-                </div>
-            </div>
-            <div class="col-sm-4 mb-4">
-                <div class="thumbnail">
-                    <img src="images/webdesign.png" alt="Modern Web Designs">
-                    <p><strong>Modern Web Designs</strong></p>
-                    <p>Most of the modern designs you see online are developed by us in cooperation with AI</p>
-                </div>
-            </div>
-            <div class="col-sm-4 mb-4">
-                <div class="thumbnail">
-                    <img src="what-is-web-system-development.webp" alt="Web System Development">
-                    <p><strong>Teach You Coding</strong></p>
-                    <p>We can help you with learning how to code, even completing your homework</p>
-                </div>
-            </div>
-            <div class="col-sm-4 mb-4">
-                <div class="thumbnail">
-                    <img src="images/system.jpg" alt="System Development">
-                    <p><strong>Teach You Coding</strong></p>
-                    <p>We can help you with learning how to code, even completing your homework</p>
-                </div>
-            </div>
-            <div class="col-sm-4 mb-4">
-                <div class="thumbnail">
-                    <img src="images/coding.jpg" alt="Coding">
-                    <p><strong>Uganda on Top</strong></p>
-                    <p>Yes, Uganda is where we are based.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a href="https://beta.publishers.adsterra.com/referral/fk1PGkZC5X" rel="nofollow"><img width="100%" height="200px" alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/120x60_adsterra_reff.gif" /></a>
-    <div class="container-fluid bg-grey">
-        <div class="row">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-globe logo slideanim"></span>
-            </div>
-            <div class="col-sm-8">
-                <h6 class="display-6 text-info">Our Values</h6>
-                <p><strong>MISSION:</strong> To reduce the bridging gap between computer illiterate and literate all over the world by teaching and equipping both IT native and IT immigrants with skills of ICT.</p>
-                <p><strong>VISION:</strong> To offer a wide range of solutions to the world's problems using technology.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid bg-grey">
-        <h6 class="text-info display-6 text-center">What Our Customers Say</h6>
-        <div class="slideshow-container">
-            <div class="mySlides text-success fade">
-                      <img src="images/this.jpg" class="rounded-circle d-block mx-auto" alt="" width="100" height="60">
-                      "This groop is the best. I am so happy with the result!"<br><span style="font-style:normal;">Asiimwe Isaac, Quality assurance director MIU, Comment Box</span>
-                     
-                    </div>
-                    <div class="mySlides text-success fade">
-                      <img src="images/muh.jpg" class="rounded-circle d-block mx-auto" alt="" width="100" height="60"> 
-                      "Could I... BE any more happy with this Group?"<br><span style="font-style:normal;">Jackie Chan, Actor, FriendsAlot</span>
-                    </div>
-                    <div class="mySlides text-success fade">
-                      <img src="images/grad.jpg" class="rounded-circle d-block mx-auto" alt="" width="100" height="60">
-                      "One word... WOW!!"<br><span style="font-style:normal;">Mercy Catherine, Salesman, Rep Inc</span>
-                    </div>
-                    </div>
-                    <br>
-                    <div style="text-align:center">
-                      <span class="dot"></span> 
-                      <span class="dot"></span> 
-                      <span class="dot"></span> 
-                    </div>
-</div><br><br>
-
-<div class="album py-5 bg-light">
-  <div class="container">
-
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-     
-
-      <div class="col">
-        <div class="card shadow page">
-          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/mobileass.jpeg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
-
-          <div class="card-body">
-            <p class="card-text">User Experience (UX): Designing intuitive and engaging interfaces that provide a seamless experience for users.
-              Cross-Platform Development: Building apps that work on multiple operating systems, such as iOS and Android, often using frameworks like React Native or Flutter.
-              Performance Optimization</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow page">
-          <video src="How to Create Automatic Popup Window _ Automatic Popup Window HTML.mp4" width="100%" height="225" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" controls></video>
-
-          <div class="card-body">
-            <p class="card-text">Trigger: A button that, when clicked, opens the pop-up.
-              Pop-up Content: Could be a form, a message, or any other content you want to display.
-              Close Mechanism: An ‘X’ button or clicking outside the pop-up to close it.
-              Pop-ups are great for displaying additional information</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow page">
-          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/download.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
-
-          <div class="card-body">
-            <p class="card-text">Web development is a dynamic and creative field that involves:
-
-              Designing: Crafting visually appealing and user-friendly interfaces.
-              Coding: Writing and debugging code to build functional websites and applications.
-              Problem-solving: Tackling challenges and finding efficient solutions.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-</div>
-  
-<footer class="container-fluid bg-dark text-white p-5">
-    <div class="row m-10 text-center">
-        <div class="col-md-4 edit">
-            <h2>quick links</h2>
-            <p><a href="index.html" class="page-link text-warning btn-link active">home</a></p>
-            <p><a href="about.html" class="page-link text-warning">about</a></p>
-            <p><a href="contact us.html" class="page-link text-warning">contact us</a></p>
-            <p><a href="#myPage" class="text-decoration-none" title="To Top">
-                <span class="glyphicon glyphicon-chevron-up text-warning">Scroll To Top</span>
-              </a></p>
-             
-
-        </div>
-        <div class="col-md-4 text-warning">
-            <h2 class="text-white">Address</h2>
-            <address>
-               MIU Students <br>
-                located in kampala <br>
-                p.o.box 2231<br>
-                namugoona<br>
-                luyinja <br>
-                nansana<br>
-                kasubi <br>
-                nakulabye<br>
-
-            </address>
-
-        </div>
-        <div class="col-md-4 edit">
-          <!---  <h2 class="text-white">services</h6>
-            <ul class="list text-info">
-                <li >Website Development</li>
-                <li>Video Editing</li>
-                <li>Mobile application Development </li>
-                <li>database systems management and design</li>
-                <li>systems design</li>    
-                <li >Graphics Design</li>
-              </ul>
-              <ul class="list text-info">
-                <li >Website Development</li>
-                <li>Video Editing</li>
-                <li>Mobile application Development </li>
-                <li>database systems management and design</li>
-                <li>systems design</li>    
-                <li >Graphics Design</li>
-              </ul> -->
-              <h2 class="text-white">Reviews</h2>
-              <ul class="list-unstyled">
-                <li class="my-2">
-                  <a class=" d-inline-flex text-decoration-none text-warning align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">Services &#xf107;</a>
-                  <ul class="list-unstyled ps-3 collapse" id="components-collapse">
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#accordion">Website Development</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#alerts">Mobile application Development</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#badge">Project assesments</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#breadcrumb">Mobile application development</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#buttons">Graphics Design</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#button-group">Course works</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#card">Photoshop and Film Making</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#carousel">Quickbooks</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#dropdowns">C and C++ programming</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#list-group">Game development</a></li>
-                    <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="#modal">Cyber security</a></li>
-                  </ul>
-                </li>
-              <li class="my-2">
-                <a class="d-inline-flex text-decoration-none text-warning  text-info align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Media Handles &#xf107;</a>
-                <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
-                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="https://www.facebook.com/groups/1460603691237891">Facebook</a></li>
-                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="https://www.youtube.com/@chrisryankent">youtube</a></li>
-                  <li><a class="d-inline-flex text-decoration-none text-info align-items-center rounded" href="https://x.com/ryankent6675364?mx=2"">twitter</a></li>
-
-                </ul>
-              </li> 
-           
-            </ul>
-            </div>
-    </div>
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped active" role="progressbar"
-      aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-        100% Perfect in What We do
-      </div>
-    </div>
-    <p class="text-center">&copy;2024 all rights reserved</p>`
-</footer>
-
-
+  <style>
  
+  </style>
+  <div class="container-custom">
+    <section class="hero-section" id="hero" style="position:relative; min-height:60vh; display:flex; flex-direction:column; justify-content:center; align-items:center; background:linear-gradient(120deg,#89f7fe 0%,#66a6ff 100%); overflow:hidden; padding:0;">
+      <canvas class="animated-bg" id="heroBg"></canvas>
+      <!-- Floating Service Icons -->
+      <div class="floating-icons">
+        <div class="floating-icon" style="top:12%;left:8%;"><i class="fa fa-laptop"></i></div>
+        <div class="floating-icon" style="top:20%;right:10%;"><i class="fa fa-mobile"></i></div>
+        <div class="floating-icon" style="bottom:18%;left:12%;"><i class="fa fa-database"></i></div>
+        <div class="floating-icon" style="bottom:10%;right:14%;"><i class="fa fa-cogs"></i></div>
+      </div>
+      <div class="hero-inner">
+        <div class="hero-content text-center" style="z-index:2;">
+          <h1 style="font-size:2.7rem;font-weight:800;letter-spacing:2px;color:#232526;text-shadow:0 2px 16px rgba(44,83,100,0.08);">CN-TECH ACADEMY UGANDA</h1>
+          <p style="font-size:1.2rem;max-width:600px;margin:18px auto 24px auto;color:#232526;">Empowering Uganda and the world with technology skills, innovation, and digital solutions.<br>
+            <span id="dots">...</span> <span id="more" style="display:none;">Our mission is to bridge the digital divide by teaching and equipping both IT natives and immigrants with essential ICT skills.</span>
+          </p>
+          <button class="btn btn-primary" onclick="myFunction()" id="myBtn">Read More</button>
+          <div class="mt-4">
+            <a href="#services" class="btn btn-outline-primary mx-1">Our Services</a>
+            <a href="donate.html" class="btn btn-warning mx-1">Support Us</a>
+          </div>
+        </div>
+        <!-- SVG Decorative Background -->
+        <svg style="position:absolute;bottom:0;left:0;width:100%;z-index:1;pointer-events:none;" height="120" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,80 C360,160 1080,0 1440,80 L1440,120 L0,120 Z" fill="#e0eafc"/></svg>
+      </div>
+    </section>
+    <!-- In-content Ad (after hero) -->
+    <div class="ad-banner mb-4"><div id="container-40d56698680b24a1804c29e22766bb7a"></div></div>
+    <div class="divider"></div>
+    <section class="services-section section-box" id="services">
+      <h2 class="text-center text-primary mb-4">Our Services</h2>
+      <div class="row">
+        <div class="service-card text-center">
+          <i class="fa fa-laptop"></i>
+          <h5>Web Designing</h5>
+          <p>Modern, responsive websites and digital marketing. We teach HTML, CSS, JS, PHP, and more.</p>
+        </div>
+        <div class="service-card text-center">
+          <i class="fa fa-mobile"></i>
+          <h5>App Development</h5>
+          <p>Android, Windows, Mac, Linux apps. Learn to build with Kotlin, C#, JS, Python, and more.</p>
+        </div>
+        <div class="service-card text-center">
+          <i class="fa fa-database"></i>
+          <h5>Database Management</h5>
+          <p>Design, monitor, and manage databases for schools, hospitals, and companies.</p>
+        </div>
+        <div class="service-card text-center">
+          <i class="fa fa-cogs"></i>
+          <h5>Systems Design</h5>
+          <p>Custom system solutions for organizations. Learn system analysis and design.</p>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <section class="stats-section section-box" id="stats">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6 mb-4">
+            <div class="stat stat-animated" data-count="120">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="col-md-3 col-6 mb-4">
+            <div class="stat stat-animated" data-count="350">0</div>
+            <div class="stat-label">Students Trained</div>
+          </div>
+          <div class="col-md-3 col-6 mb-4">
+            <div class="stat stat-animated" data-count="15">0</div>
+            <div class="stat-label">Awards Won</div>
+          </div>
+          <div class="col-md-3 col-6 mb-4">
+            <div class="stat stat-animated" data-count="8">0</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <!-- Testimonial Carousel Section -->
+    <section class="open-carousel section-box" id="testimonials">
+      <h2 class="text-center text-primary mb-4">What Our Students Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+          <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial-open mx-auto">
+              <img src="images/chris.jpg" alt="Chris Kent">
+              <div class="stars">★★★★★</div>
+              <p>"CN-TECH Academy gave me the confidence and skills to build my first website. The team is amazing!"</p>
+              <div class="font-weight-bold mt-2">Chris Kent</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-open mx-auto">
+              <img src="images/bruno.jpg" alt="Bruno">
+              <div class="stars">★★★★★</div>
+              <p>"The app development course was hands-on and practical. I launched my first Android app!"</p>
+              <div class="font-weight-bold mt-2">Bruno</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-open mx-auto">
+              <img src="images/nathan.jpg" alt="Nathan">
+              <div class="stars">★★★★★</div>
+              <p>"Great instructors and a supportive community. Highly recommend for anyone in Uganda!"</p>
+              <div class="font-weight-bold mt-2">Nathan</div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <!-- Team Section -->
+    <section class="team-section section-box" id="team">
+      <h2 class="text-center text-primary mb-4">Meet Our Team</h2>
+      <div class="row">
+        <div class="team-member">
+          <img src="images/chris.jpg" alt="Chris Kent">
+          <h6>Chris Kent</h6>
+          <p>Founder & Lead Developer</p>
+        </div>
+        <div class="team-member">
+          <img src="images/bruno.jpg" alt="Bruno">
+          <h6>Bruno</h6>
+          <p>UI/UX Designer</p>
+        </div>
+        <div class="team-member">
+          <img src="images/nathan.jpg" alt="Nathan">
+          <h6>Nathan</h6>
+          <p>Mobile App Specialist</p>
+        </div>
+        <div class="team-member">
+          <img src="images/muh.jpg" alt="Muh">
+          <h6>Muh</h6>
+          <p>Database Expert</p>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <!-- FAQ Section -->
+    <section class="faq-section section-box" id="faq">
+      <h2 class="text-center text-primary mb-4">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="card">
+          <div class="card-header" id="faq1">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                What services do you offer?
+              </button>
+            </h2>
+          </div>
+          <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion">
+            <div class="card-body">We offer web design, app development, database management, systems design, and more.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="faq2">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                How can I join your academy?
+              </button>
+            </h2>
+          </div>
+          <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+            <div class="card-body">Contact us via the form or our social media handles to enroll or get more information.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="faq3">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                Do you offer remote/online training?
+              </button>
+            </h2>
+          </div>
+          <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+            <div class="card-body">Yes, we offer both in-person and online training options for all our courses.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <!-- Partners Section -->
+    <section class="partners-section section-box" id="partners">
+      <h2 class="text-center text-primary mb-4">Our Partners</h2>
+      <div class="partners-strip d-flex flex-nowrap align-items-center justify-content-center">
+        <div class="partner-logo mx-3"><img src="images/BRUN.jpg" alt="Partner 1"></div>
+        <div class="partner-logo mx-3"><img src="images/grad.jpg" alt="Partner 2"></div>
+        <div class="partner-logo mx-3"><img src="images/PAFF_092718_researchbutton-609x419.jpg" alt="Partner 3"></div>
+        <div class="partner-logo mx-3"><img src="images/pc.jpg" alt="Partner 4"></div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <footer class="container-fluid mt-5 footer-modern">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="footer-title">Quick Links</div>
+          <p><a href="#hero" class="active">Home</a></p>
+          <p><a href="#services">Services</a></p>
+          <p><a href="#team">Team</a></p>
+          <p><a href="#faq">FAQ</a></p>
+          <p><a href="#partners">Partners</a></p>
+          <p><a href="#hero" title="To Top">Scroll To Top</a></p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="footer-title">Address</div>
+          <address>
+            MIU Students <br>
+            Located in Kampala <br>
+            P.O. Box 2231<br>
+            Namugoona, Luyinja, Nansana, Kasubi, Nakulabye<br>
+          </address>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="footer-title">Connect</div>
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/groups/1460603691237891"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.youtube.com/@chrisryankent"><i class="fa fa-youtube"></i> YouTube</a></li>
+            <li><a href="https://x.com/ryankent6675364?mx=2"><i class="fa fa-twitter"></i> Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">100% Perfect in What We Do</div>
+      </div>
+      <p class="text-center mt-4 mb-0" style="font-size:1rem;">&copy;2024 All rights reserved | CN-TECH Academy Uganda</p>
+    </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/index.js"></script> 
   <script src="js/index2.js"></script> 
   <script src="js/carousel.js"></script>
   <script src="js/slide.js"></script>
-    <script type='text/javascript' src='//pl26159150.effectiveratecpm.com/4a/9c/e4/4a9ce422b4f13b04c9eb77de9a88c24d.js'></script>
-    </body>
+  <script type='text/javascript' src='//pl26159150.effectiveratecpm.com/4a/9c/e4/4a9ce422b4f13b04c9eb77de9a88c24d.js'></script>
+  <script>
+    // Custom navbar toggle (raw JS, no Bootstrap collapse)
+    document.addEventListener('DOMContentLoaded', function() {
+      var navToggle = document.getElementById('customNavToggle');
+      var navMenu = document.getElementById('customNavbarMenu');
+      navToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('open');
+      });
+      // Close menu on link click (mobile)
+      document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if(window.innerWidth < 992) navMenu.classList.remove('open');
+        });
+      });
+    });
+    // Sticky navbar
+    window.addEventListener('scroll', function() {
+      var nav = document.getElementById('mainNavbar');
+      if(window.scrollY > 40) nav.classList.add('sticky');
+      else nav.classList.remove('sticky');
+    });
+    // Read more toggle
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read More";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read Less";
+        moreText.style.display = "inline";
+      }
+    }
+    // Newsletter form
+    $("#newsletterForm").on("submit", function(e) {
+      e.preventDefault();
+      $("#newsletterMsg").text("Thank you for subscribing!").addClass("text-success");
+      $(this).trigger("reset");
+    });
+    // Bootstrap carousel auto
+    $('#testimonialCarousel').carousel({
+      interval: 7000,
+      ride: 'carousel',
+      pause: false,
+      wrap: true
+    });
+    // Animated counters
+    function animateCounter(el, to) {
+      let start = 0;
+      let duration = 1800;
+      let step = Math.ceil(to / (duration/16));
+      let interval = setInterval(function() {
+        start += step;
+        if(start >= to) {
+          el.textContent = to;
+          clearInterval(interval);
+        } else {
+          el.textContent = start;
+        }
+      }, 16);
+    }
+    function runCounters() {
+      $('.stat').each(function() {
+        var $this = $(this);
+        if(!$this.hasClass('counted')) {
+          animateCounter(this, parseInt($this.data('count')));
+          $this.addClass('counted');
+        }
+      });
+    }
+    let statsVisible = false;
+    $(window).on('scroll', function() {
+      if(!statsVisible && $(window).scrollTop() + $(window).height() > $('#stats').offset().top + 100) {
+        runCounters();
+        statsVisible = true;
+      }
+    });
+    // Dark mode toggle
+    function setDarkMode(on) {
+      if(on) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', '1');
+        $('#darkToggle i').removeClass('fa-moon-o').addClass('fa-sun-o');
+      } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', '0');
+        $('#darkToggle i').removeClass('fa-sun-o').addClass('fa-moon-o');
+      }
+    }
+    $('#darkToggle').on('click', function() {
+      setDarkMode(!document.body.classList.contains('dark-mode'));
+    });
+    if(localStorage.getItem('darkMode') === '1') setDarkMode(true);
+    // Animated hero background
+    function animateHeroBg() {
+      var canvas = document.getElementById('heroBg');
+      if(!canvas) return;
+      var ctx = canvas.getContext('2d');
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = document.querySelector('.hero-section').offsetHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize);
+      let circles = [];
+      for(let i=0;i<18;i++) {
+        circles.push({
+          x: Math.random()*canvas.width,
+          y: Math.random()*canvas.height,
+          r: 30+Math.random()*60,
+          dx: (Math.random()-0.5)*0.7,
+          dy: (Math.random()-0.5)*0.7,
+          color: `rgba(${180+Math.random()*60},${200+Math.random()*40},255,0.13)`
+        });
+      }
+      function draw() {
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        for(let c of circles) {
+          ctx.beginPath();
+          ctx.arc(c.x,c.y,c.r,0,2*Math.PI);
+          ctx.fillStyle = c.color;
+          ctx.fill();
+          c.x += c.dx;
+          c.y += c.dy;
+          if(c.x<0||c.x>canvas.width) c.dx*=-1;
+          if(c.y<0||c.y>canvas.height) c.dy*=-1;
+        }
+        requestAnimationFrame(draw);
+      }
+      draw();
+    }
+    animateHeroBg();
+    // Reveal animations (AOS-like)
+    function revealOnScroll() {
+      $('[data-aos]').each(function() {
+        var $el = $(this);
+        if($el.offset().top < $(window).scrollTop() + $(window).height() - 60) {
+          $el.addClass('aos-animate');
+        }
+      });
+    }
+    $(window).on('scroll', revealOnScroll);
+    $(document).ready(revealOnScroll);
+    // Smooth scroll for nav links
+    $('.navbar-nav .nav-link, .footer-title ~ p a').on('click', function(e) {
+      var target = $(this).attr('href');
+      if(target && target.startsWith('#')) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: $(target).offset().top-60}, 600);
+      }
+    });
+  </script>
+</body>
 </html>

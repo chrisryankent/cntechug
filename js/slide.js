@@ -5,6 +5,7 @@ function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
+  if (!slides || slides.length === 0) return; // Prevent error if no slides
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }

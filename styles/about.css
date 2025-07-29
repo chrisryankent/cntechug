@@ -27,3 +27,245 @@ background-color: hsla(0, 10%, 90%, 30%);
 .col-md-4 address{
     font-size: 15px;
   }
+
+/* --- Modern About Page Enhancements --- */
+
+/* Gradient heading for About Us */
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #66a6ff 0%, #232526 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  letter-spacing: 2px;
+  margin-bottom: 0.7em;
+  text-align: center;
+  animation: fadeInDown 1s;
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Glassmorphism card for about content */
+.about-card {
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.13);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 0 auto 2rem auto;
+  max-width: 900px;
+  transition: box-shadow 0.3s;
+  border: 1.5px solid rgba(102,166,255,0.13);
+  animation: fadeInUp 1.1s;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Team/Programmer cards */
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0 2.5rem 0;
+}
+.team-card {
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(44,83,100,0.10);
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  max-width: 260px;
+  min-width: 180px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  animation: fadeInUp 1.2s;
+}
+.team-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(44,83,100,0.12);
+}
+.team-card h6 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #232526;
+  margin-bottom: 4px;
+}
+.team-card p {
+  font-size: 0.97rem;
+  color: #232526;
+  margin-bottom: 0;
+}
+.team-card:hover {
+  box-shadow: 0 4px 18px rgba(44,83,100,0.18);
+  transform: translateY(-4px) scale(1.04);
+}
+
+/* Animated background shape */
+.about-bg-shape {
+  position: absolute;
+  top: -60px;
+  left: -80px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle at 60% 40%, #66a6ff 0%, #e0eafc 100%);
+  opacity: 0.13;
+  border-radius: 50%;
+  z-index: 0;
+  animation: floatShape 6s ease-in-out infinite alternate;
+}
+@keyframes floatShape {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(30px) scale(1.08); }
+}
+
+/* Reveal animation for section */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+.reveal.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Section titles */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #66a6ff;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* Mission & Vision section */
+.about-mission-icon {
+  font-size: 2.2rem;
+  color: #66a6ff;
+  margin-bottom: 0.3rem;
+}
+.about-mission-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #232526;
+  margin-bottom: 0.4rem;
+  letter-spacing: 1px;
+}
+
+/* Values cards */
+.about-values-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.about-value-card {
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(44,83,100,0.10);
+  padding: 1.2rem 0.7rem 1rem 0.7rem;
+  margin: 0.5rem 0.2rem;
+  min-width: 140px;
+  max-width: 220px;
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  animation: fadeInUp 1.2s;
+}
+.about-value-icon {
+  font-size: 2rem;
+  color: #66a6ff;
+  margin-bottom: 0.3rem;
+}
+.about-value-card h6 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #232526;
+  margin-bottom: 0.2rem;
+}
+.about-value-card p {
+  font-size: 0.93rem;
+  color: #232526;
+  margin-bottom: 0;
+}
+.about-value-card:hover {
+  box-shadow: 0 4px 18px rgba(44,83,100,0.18);
+  transform: translateY(-4px) scale(1.04);
+}
+
+/* Partners strip */
+.about-partners-strip {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 12px 0;
+  background: transparent;
+  border-radius: 12px;
+}
+.about-partner-logo {
+  display: inline-block;
+  filter: grayscale(1) brightness(0.9);
+  opacity: 0.7;
+  transition: filter 0.3s, opacity 0.3s, transform 0.2s;
+  height: 70px;
+}
+.about-partner-logo img {
+  height: 70px;
+  max-width: 160px;
+  padding: 8px 16px;
+}
+.about-partner-logo:hover {
+  filter: grayscale(0) brightness(1.1);
+  opacity: 1;
+  transform: scale(1.07);
+}
+
+/* CTA button */
+.about-card .btn-primary.btn-lg {
+  border-radius: 18px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 12px 36px;
+  background: linear-gradient(90deg, #66a6ff 0%, #232526 100%);
+  border: none;
+  box-shadow: 0 2px 8px rgba(44,83,100,0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.about-card .btn-primary.btn-lg:hover {
+  background: linear-gradient(90deg, #232526 0%, #66a6ff 100%);
+  box-shadow: 0 4px 18px rgba(44,83,100,0.18);
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .about-card { padding: 1.2rem 0.5rem; }
+  .team-cards { gap: 1rem; }
+  .about-values-cards { gap: 0.5rem 0.2rem; }
+  .about-partner-logo img { height: 38px; max-width: 90px; padding: 4px 8px; }
+}
+@media (max-width: 600px) {
+  .about-heading { font-size: 1.3rem; }
+  .about-bg-shape { width: 120px; height: 120px; top: -30px; left: -30px; }
+  .team-card { padding: 1rem 0.3rem; min-width: 120px; }
+  .about-values-cards { flex-direction: column; align-items: center; }
+  .about-value-card { min-width: 100px; max-width: 98vw; padding: 0.7rem 0.2rem; }
+  .about-partner-logo img { height: 28px; max-width: 60px; padding: 2px 4px; }
+}
+
+/* ...existing code... */
